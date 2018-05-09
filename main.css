@@ -1,0 +1,50 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(17, 24, 65), grey, rgb(17, 24, 65));
+}
+
+.container {
+    background-image: url("https://www.speedcommerce.com/wp-content/themes/speedcommerce/img/elements/boxes.png");
+    background-size: cover;
+}
+
+.login {
+    background-color: rgba(214, 214, 197, 0.95);
+    margin-top: 7vh;
+    margin-bottom: 10vh;
+    min-height: 85vh;
+    border-radius: 20px;
+    border: double 10px #2f3452;
+    display: block;
+}
+
+.logoName {
+    color: white;
+    text-shadow: 2px 3px 5px black; 
+}
+
+h6 {
+    color: white;
+    text-shadow: 5px 2px 10px black; 
+}
+
+.logoImg {
+    min-height: 20vh;
+    max-height: 30vh;
+    max-width: 30vw;
+    margin-top: -20px;
+}
+
+form {
+    margin-top: -50px;
+}
+
+.loginBtn {
+    margin-top: 10px;
+    background-color: #2f3452;
+}
+
+.loginBtn:hover {
+    background-color: darkblue;
+}

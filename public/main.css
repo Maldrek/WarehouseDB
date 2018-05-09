@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(75, 24, 24);
+    height: 100%;
+    width: 100%;
+}
+
+.login {
+    background-color: yellow;
+}
