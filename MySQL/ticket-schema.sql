@@ -3,7 +3,7 @@ CREATE DATABASE ticket_db;
 
 USE ticket_db;
 
-CREATE TABLE ticket_db (
+CREATE TABLE ticket (
     incident_id INT NOT NULL auto_increment,
     title VARCHAR(200) NOT NULL,
     created DATETIME NOT NULL,
