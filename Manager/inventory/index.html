@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="inventory.css" />
+
+</head>
+
+<body>
+    <div class="website">
+        <div class="row center" style="margin: 0px;">
+            <div id="sideNav" class="col s12 m3 l3 xl3 valign-wrapper text-flow valign-wrapper">
+                <img class="logoImg center" src="https://static.wixstatic.com/media/568589_c256eb30ccf949c882dddaa224606f3c.png/v1/fill/w_784,h_784,al_c,usm_0.66_1.00_0.01/568589_c256eb30ccf949c882dddaa224606f3c.png">
+                <h3>WhDB</h3>
+                <a class="navLink" href="../active/" style="margin-top: 5vh;">
+                    <h3 class="flow-text">Active</h3>
+                </a>
+                <a class="navLink" href="../completed/">
+                    <h3 class="flow-text">Completed</h3>
+                </a>
+                <a class="navLink" href="../closed/">
+                    <h3 class="flow-text">Closed</h3>
+                </a>
+                <a class="navLink" href="../people/">
+                    <h3 class="flow-text">People</h3>
+                </a>
+                <a class="navLink" href="../inventory/">
+                    <h3 class="flow-text">Inventory</h3>
+                </a>
+            </div>
+            <div id="searchBar" class="col s12 m9 l9 xl9" style="padding-left: 0px; padding-right: 0px;">
+                <nav>
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" style="margin: 0px;" class="col s12 m6 l6 xl6 blue darken-4 white-text" required>
+                                <label class="label-icon" for="search">
+                                    <i class="material-icons">search</i>
+                                </label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <div class="imgBackground col s12 m9 l9 xl9" style="padding: 0px;">
+                <div id="inventoryContent" class="col s12 m10 l10 xl10 push-m1 push-l1 push-xl1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+
+</html>

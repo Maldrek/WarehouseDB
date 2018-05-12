@@ -1,0 +1,51 @@
+body {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+#sideNav {
+    min-height: 20vh;
+    height:100vh;
+    background-color: rgba(212, 212, 205, 0.925);
+    border-right: double 10px rgb(26, 17, 83);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.logoImg {
+    min-height: 20vh;
+    max-height: 30vh;
+    max-width: 30vw;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: -10px;
+    color: white;
+    text-shadow: 2px 3px 5px black; 
+}
+
+.navLink {
+    margin-top: 30px!important;
+}
+
+.imgBackground {
+    height: 670px;
+    max-height: 100vh;
+    display: block;
+    overflow: auto;
+    background-color: black;
+    background-image: url("https://www.msdsonline.com/wp-content/uploads/warehouse.jpg");
+    background-size: cover;
+}
+
+#closedContent {
+    max-height: 600px;
+    min-height: 80vh;
+    background-color: rgba(212, 212, 205, 0.925);
+    margin-top: 30px;
+    display: block;
+    overflow: auto;
+}

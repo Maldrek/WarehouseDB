@@ -6,6 +6,7 @@ body {
 
 .container {
     background-image: url("https://www.speedcommerce.com/wp-content/themes/speedcommerce/img/elements/boxes.png");
+    height: 100%;
     background-size: cover;
 }
 
@@ -24,7 +25,7 @@ body {
     text-shadow: 2px 3px 5px black; 
 }
 
-h6 {
+h5 {
     color: white;
     text-shadow: 5px 2px 10px black; 
 }
@@ -40,9 +41,13 @@ form {
     margin-top: -50px;
 }
 
+#modal1:hover {
+    cursor: pointer;
+}
+
 .loginBtn {
-    margin-top: 10px;
     background-color: #2f3452;
+    margin-bottom: 20px;
 }
 
 .loginBtn:hover {
