@@ -6,9 +6,8 @@ body {
 }
 
 #sideNav {
-    min-height: 20vh;
-    height:100vh;
-    background-color: rgba(212, 212, 205, 0.925);
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(212, 212, 205, 0.925), rgb(15, 15, 73), silver, rgb(15, 15, 73),  rgba(212, 212, 205, 0.925));
     border-right: double 10px rgb(26, 17, 83);
     display: flex;
     flex-flow: column wrap;
@@ -46,6 +45,13 @@ h3 {
     min-height: 80vh;
     background-color: rgba(212, 212, 205, 0.925);
     margin-top: 30px;
-    display: block;
+    display: flex;
     overflow: auto;
+    flex-direction: column;
+    border: 5px double rgb(21, 21, 56)
+}
+
+#collapsible {
+    margin-top: 20px;
+    margin-left: 8vw;
 }

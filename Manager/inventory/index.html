@@ -39,7 +39,7 @@
                     <div class="nav-wrapper">
                         <form>
                             <div class="input-field">
-                                <input id="search" type="search" style="margin: 0px;" class="col s12 m6 l6 xl6 blue darken-4 white-text" required>
+                                <input id="search" type="search" style="margin: 0px;" class="col s12 m6 l6 xl6 indigo darken-4 white-text" required>
                                 <label class="label-icon" for="search">
                                     <i class="material-icons">search</i>
                                 </label>
@@ -51,13 +51,28 @@
             </div>
             <div class="imgBackground col s12 m9 l9 xl9" style="padding: 0px;">
                 <div id="inventoryContent" class="col s12 m10 l10 xl10 push-m1 push-l1 push-xl1">
-
+                    <div id="collapsible" class="row">
+                        <div class="col s10 m10 l10 xl10 center">
+                            <ul class="collapsible">
+                                <li id="activeInv">
+                                    <div class="collapsible-header center-align indigo darken-4 white-text">
+                                        <i class="material-icons">label_outline</i>FIRST ACTIVE</div>
+                                    <div class="collapsible-body white">
+                                        <span>Lorem ipsum dolor sit amet.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script rel="stylesheet" type="text/javascript" src="../main.js"></script>
 </body>
 
 </html>
