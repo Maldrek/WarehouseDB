@@ -15,13 +15,15 @@ var PORT = process.env.PORT || 8070;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
 // Routes give our server a "map" of how to respond when users visit or request data from various URLs.
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./routes/html-routes.js")(app);
+require("./routes/requestor-api-routes.js")(app);
+require("./routes/tickets-api-routes.js")(app);
 
-
-// The below code effectively "starts" our server
-app.listen(PORT, function() {
-  console.log("App listening on PORT: " + PORT);
+// Syncing our sequelize models and then starting our Express app
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
+
