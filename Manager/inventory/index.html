@@ -66,18 +66,26 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                        <div class="input-field col s6">
-                                            <input placeholder="JCC" id="company" type="text" class="validate" maxlength="30">
-                                            <label for="company">Company</label>
-                                        </div>
-                                        <div class="input-field col s6">
-                                            <input placeholder="Instructor" id="title" type="text" class="validate" maxlength="30">
-                                            <label for="title">Title</label>
-                                        </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="JCC" id="company" type="text" class="validate" maxlength="30">
+                                        <label for="company">Company</label>
                                     </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="Instructor" id="title" type="text" class="validate" maxlength="30">
+                                        <label for="title">Title</label>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input placeholder="Item to be delivered" id="itemName" type="text" class="validate" maxlength="100">
+                                        <select id="itemName">
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">File Cabinet</option>
+                                            <option value="2">Office Desk</option>
+                                            <option value="3">Office Chair</option>
+                                            <option value="4">Office Stand</option>
+                                            <option value="5">Standing Desk</option>
+                                            <option value="6">Toner Cartridge</option>
+                                        </select>
                                         <label for="itemName">Item</label>
                                     </div>
                                 </div>
@@ -121,6 +129,11 @@
                                     </div>
                                 </div>
                             </form>
+                            <div class="row center">
+                                <a href="../active/" class="waves-effect waves-light btn">
+                                    Submit
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
