@@ -7,32 +7,65 @@ module.exports = function(sequelize, DataTypes) {
           len: [1]
         }
       },
+      first_name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        len: [1]
+      },
+      last_name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        len: [1]
+      },
+      company: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        len: [1]
+      },
       title: {
         type: DataTypes.STRING,
         allowNull: false,
         len: [1]
       },
-      created: {
-        type: DataTypes.DATETIME,
-        allowNull: false,
-        len: [1]
-      },
-      due_Date: {
-        type: DataTypes.DATE,
-        allowNull: false,
-        len: [1]
-      },
-      summary: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-        len: [1]
-      },
-      requestor: {
+      item: {
         type: DataTypes.STRING,
         allowNull: false,
         len: [1]
       },
-      phone_number: {
+      building: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        len: [1]
+      },
+      room_number: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        default: false,
+        len: [1]
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        default: false,
+        len: [1]
+      },
+      descript: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        default: false,
+        len: [1]
+      },
+      delivery_option: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        len: [1]
+      },
+      due_date: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        len: [1]
+      },
+      intials: {
         type: DataTypes.STRING,
         allowNull: false,
         len: [1]
@@ -55,23 +88,18 @@ module.exports = function(sequelize, DataTypes) {
         default: false,
         len: [1]
       },
-      image_pathway: {
-        type: DataTypes.TEXT,
-        allowNull: true,
-        len: [1]
-      }
     });
   
-    Ticket.associate = function(models) {
-      // We're saying that a Post should belong to an Requestor
-      // A Post can't be created without an Requestor due to the foreign key constraint
-      Ticket.belongsTo(models.Requestor, {
-        foreignKey: {
-          allowNull: false
-        }
-      });
-    };
+  //   Ticket.associate = function(models) {
+  //     // We're saying that a Post should belong to an Requestor
+  //     // A Post can't be created without an Requestor due to the foreign key constraint
+  //     Ticket.belongsTo(models.Requestor, {
+  //       foreignKey: {
+  //         allowNull: false
+  //       }
+  //     });
+  //   };
   
-    return Ticket;
-  };
+  //   return Ticket;
+  // };
   

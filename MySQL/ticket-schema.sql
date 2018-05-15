@@ -4,16 +4,20 @@ CREATE DATABASE ticket_db;
 USE ticket_db;
 
 CREATE TABLE ticket (
-    incident_id INT NOT NULL auto_increment,
-    title VARCHAR(200) NOT NULL,
-    created DATETIME NOT NULL,
+    incident_id INT AUTO_INCREMENT NOT NULL,
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
+    company VARCHAR(30) NOT NULL,
+    title VARCHAR(30) NOT NULL,
+    item INT NOT NULL,
+    building VARCHAR(4) NOT NULL,
+    room_number VARCHAR(4) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    descript VARCHAR(255) NOT NULL,
+    delivery_option INT NOT NULL,
     due_date DATE NOT NULL,
-    summary TEXT NOT NULL,
-    requestor VARCHAR(100) NOT NULL,
-    phone_number VARCHAR(20) NOT NULL,
-    active BOOLEAN DEFAULT false,
-    completed BOOLEAN DEFAULT false,
-    closed BOOLEAN DEFAULT false,
-    image_pathway TEXT,
-    PRIMARY KEY (incident_id);
+    initials VARCHAR(3) NOT NULL,
+    active BOOLEAN default FALSE,
+    completed BOOLEAN default FALSE,
+    closed BOOLEAN default FALSE
 );
