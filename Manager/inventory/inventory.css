@@ -49,14 +49,13 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: auto;
     flex-direction: column;
     border: 5px double rgb(21, 21, 56)
 }
 
 #ticketForm {
-    height: 35rem;
-    width: 50rem;
+    height: 35em;
+    width: 50em;
     background-color: rgba(255, 255, 255, 0.7);
     overflow: auto;
 }
