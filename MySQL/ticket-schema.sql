@@ -4,7 +4,7 @@ CREATE DATABASE ticket_db;
 USE ticket_db;
 
 CREATE TABLE ticket (
-    incident_id INT AUTO_INCREMENT NOT NULL,
+    incident_id INT NOT NULL AUTO_INCREMENT,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     company VARCHAR(30) NOT NULL,
@@ -19,5 +19,6 @@ CREATE TABLE ticket (
     initials VARCHAR(3) NOT NULL,
     active BOOLEAN default FALSE,
     completed BOOLEAN default FALSE,
-    closed BOOLEAN default FALSE
+    closed BOOLEAN default FALSE,
+    KEY incident_id
 );
