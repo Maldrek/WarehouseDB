@@ -45,7 +45,7 @@ module.exports = function(app) {
   });
 
   // DELETE route for deleting ticket
-  app.delete("/api/ticket/:id", function(req, res) {
+  app.delete("/api/ticket/:incident_id", function(req, res) {
     db.ticket.destroy({
       where: {
         id: req.params.id

@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var Ticket = sequelize.define("Ticket", {
+    var ticket = sequelize.define("Ticket", {
       incident_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -102,4 +102,4 @@ module.exports = function(sequelize, DataTypes) {
   
   //   return Ticket;
   // };
-  
+}
