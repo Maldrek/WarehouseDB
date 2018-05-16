@@ -55,3 +55,8 @@ h3 {
     margin-top: 20px;
     margin-left: 8vw;
 }
+
+#itemImg {
+    height: 150px;
+    width: 150px;
+}
