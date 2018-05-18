@@ -8,15 +8,15 @@ module.exports = function(app) {
   // GET route for getting all of the tickets
   app.get("/api/ticket", function(req, res) {
     var query = {};
-    if (req.query.requestor_id) {
-      query.requestorId = req.query.requestor_id;
+    if (req.query.incident_id) {
+      query.incident_id = req.query.incident_id;
     }
     // Here we add an "include" property to our options in our findAll query
     // We set the value to an array of the models we want to include in a left outer join
     // In this case, just db.Requestor
     db.Ticket.findAll({
       where: query,
-      include: [db.Requestor]
+      include: [db.incident_id]
     }).then(function(dbTicket) {
       res.json(dbTicket);
     });

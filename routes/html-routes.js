@@ -24,7 +24,7 @@ module.exports = function(app) {
 
   // closed route loads index.html (closed)
   app.get("/closed", function(req, res) {
-    res.sendFile(path.join(__dirname, "../manager/closed/index.html));
+    res.sendFile(path.join(__dirname, "../manager/closed/index.html"));
   });
 
   // inventory route loads index.html (inventory)
