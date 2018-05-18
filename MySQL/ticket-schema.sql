@@ -15,10 +15,10 @@ CREATE TABLE ticket (
     email VARCHAR(50) NOT NULL,
     descript VARCHAR(255) NOT NULL,
     delivery_option INT NOT NULL,
-    due_date DATE NOT NULL,
+    due_date DATETIME NOT NULL,
     initials VARCHAR(3) NOT NULL,
     active BOOLEAN default FALSE,
     completed BOOLEAN default FALSE,
     closed BOOLEAN default FALSE,
-    KEY incident_id
+    PRIMARY KEY (incident_id)
 );

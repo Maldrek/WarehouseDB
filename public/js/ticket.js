@@ -26,8 +26,10 @@ $(document).ready(function() {
                 due_date: $("#dueDate").val(),
                 initials: $("#initial").val()
             },
-            success: success,
-            dataType: dataType
+            success: function(data){
+                console.log(data);
+            },
+            dataType: 'json'
         })
     }
 
