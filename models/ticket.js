@@ -89,7 +89,8 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       },
     });
-  
+
+    return Ticket; 
   //   Ticket.associate = function(models) {
   //     // We're saying that a Post should belong to an Requestor
   //     // A Post can't be created without an Requestor due to the foreign key constraint
@@ -102,4 +103,4 @@ module.exports = function(sequelize, DataTypes) {
   
   //   return Ticket;
   // };
-  
+}
